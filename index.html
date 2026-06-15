@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Pookieee 💙</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<audio id="song" loop>
+  <source src="music.mp3">
+</audio>
+
+<button id="musicBtn">
+  🎵 Play Our Song
+</button>
+
+<section class="screen active" id="welcome">
+
+  <div class="card">
+
+    <h1>🎂 Happy Birthday, Pookieee 💙</h1>
+
+    <p>
+      Hey Bubba,<br><br>
+
+      Before you blow out your candles and eat your cake,
+      I made you a little adventure.
+      It's filled with our memories, my favorite moments,
+      and a whole lot of love from your Pondati. ❤️
+    </p>
+
+    <div class="gift">🎁</div>
+
+    <button onclick="nextScreen('memories')">
+      ✨ Start the Adventure ✨
+    </button>
+
+  </div>
+
+</section>
+
+<section class="screen" id="memories">
+
+  <h2>📸 Memory Lane</h2>
+
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="hand.jpg">
+      <p>
+        The moment our hands found each other,
+        my heart quietly decided,
+        "Yep, this is my person." 🤝❤️
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="night-selfie.jpg">
+      <p>
+        One picture. Two smiles.
+        And a million reasons why I feel lucky every day. ✨
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="cafeteria.jpg">
+      <p>
+        My favorite thing about us?
+        We can be completely silly and still feel like home. 😂💕
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="saree.jpg">
+      <p>
+        Straight out of a movie scene.
+        Still can't believe I get to love someone who looks at me like this. 🖤✨
+      </p>
+    </div>
+
+    <div class="slide">
+      <img src="amusement.jpg">
+      <p>
+        Adventures are fun.
+        But they're magical when they're with you. 🎢💙
+      </p>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button id="prev">⬅️</button>
+    <button id="next">➡️</button>
+  </div>
+
+  <button onclick="nextScreen('game')">
+    Continue the Adventure ➜
+  </button>
+
+</section>
+
+<section class="screen" id="game">
+
+  <h2>❤️ Collect 10 Hearts, Pookieee!</h2>
+
+  <h3 id="score">
+    Hearts Collected: 0/10 ❤️
+  </h3>
+
+  <div id="gameArea"></div>
+
+</section>
+
+<section class="screen" id="letters">
+
+  <h2>💌 Pondati's Secret Letters</h2>
+
+  <div class="letters">
+
+    <div class="letter">
+      <h3>❤️ Why I Love You</h3>
+
+      <p>
+        I love the way you make me laugh,
+        the way you listen to me,
+        the way you care about even the smallest things,
+        and how you somehow make every ordinary day feel special.
+      </p>
+    </div>
+
+    <div class="letter">
+      <h3>🌊 Our Bapatla Trip</h3>
+
+      <p>
+        The laughs, the conversations,
+        the random moments,
+        and simply existing together.
+
+        If I could relive one trip again and again,
+        it would be that one—with you. 💙
+      </p>
+    </div>
+
+    <div class="letter">
+      <h3>🎂 Birthday Wish</h3>
+
+      <p>
+        I hope this year brings you everything your heart secretly wishes for.
+        I hope you smile more,
+        stress less,
+        and always know that someone loves you deeply
+        and believes in you endlessly. 💙
+      </p>
+    </div>
+
+  </div>
+
+  <button onclick="nextScreen('cake')">
+    One More Surprise ➜
+  </button>
+
+</section>
+
+<section class="screen" id="cake">
+
+  <div class="card">
+
+    <h2>🎂 Make a wish, Pookieee.</h2>
+
+    <div id="cakeEmoji">
+      🎂
+    </div>
+
+    <p id="wish"></p>
+
+    <button onclick="nextScreen('final')">
+      Open Final Message ❤️
+    </button>
+
+  </div>
+
+</section>
+
+<section class="screen" id="final">
+
+  <div class="card">
+
+    <h1>Happy Birthday, My Pookieee 💙</h1>
+
+    <p>
+      Two years ago,
+      I never knew one person could become such an important part of my world.
+      <br><br>
+
+      Thank you for the love,
+      the laughter,
+      the comfort,
+      the adventures,
+      and every little moment in between.
+
+      <br><br>
+
+      Thank you for being my Bubba,
+      my safe place,
+      and my favorite person.
+
+      <br><br>
+
+      From hand-holding moments
+      to our Bapatla adventures,
+      every chapter with you has been beautiful.
+
+      <br><br>
+
+      I'd choose you again and again.
+
+      <br><br>
+
+      Love,<br>
+      Your Pondati ❤️
+    </p>
+
+    <button id="hugBtn">
+      🤗 Send Me a Virtual Hug
+    </button>
+
+    <div id="hug"></div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
